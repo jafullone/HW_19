@@ -1,0 +1,172 @@
+.nav-names {
+    list-style: none;
+    margin-top: 20px;
+    width: 50%;
+    padding-left: 500px;
+    font-family: Tahoma, sans-serif;
+       
+}
+.nav-names li {
+    display: inline-block;
+    padding: 15px; 
+   
+
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+
+}
+.logo {
+    padding: 1%;
+    float: left;
+    vertical-align: center;
+    width: 23%;
+    
+}
+nav {
+    width: 73%;
+    padding: 1%;
+    vertical-align: center;
+
+}
+ul {
+    width: 50%;
+    margin-left: auto;
+    display: inline-block;
+    list-style-type: none;
+    
+}
+.heroImg {
+    height: 700px;
+    padding: 25px;
+    /* outline: 1px solid red; */
+}
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+footer {
+    background-color: #373738;
+    /* outline: 1px solid red; */
+  
+}
+#navFooter {
+    display: inline-block;
+    vertical-align: bottom;
+    padding: auto 0;
+}
+
+.navigation {
+    vertical-align: center;
+    /* outline: 1px solid red; */
+}
+.footer-names {
+    list-style: none;
+    margin-top: 20px;
+}
+.footer-names li {
+    display: inline-block;
+    padding: 15px; 
+
+    color: white;
+}
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
+ }
+ 
+ .skillsHead{
+     text-align: center;
+ }
+.skill1 {
+     width: 33%;
+    
+  }
+.skill2 {
+    width: 33%;
+}
+.skill3 {
+    width: 33%;
+}
+.mySkills {
+    align-items: center;
+}
+.icon {
+    text-align: center;
+    color: #AC9FBB;
+}
+.mySkills h3 {
+    text-align: center;
+
+}
+.mySkills p {
+    text-align: center;
+}
+body {
+    font-family: Tahoma, sans-serif;
+}
+
+#myWorkGrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "myheading"
+    "project1"
+    "project2"
+    "project3";
+}
+
+.myWorkGridArea {
+    align-items: center;
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-areas: "image text";
+}
+
+#header {
+    grid-area: myheading;
+    padding-top: 30px;
+    text-align: center;
+}
+
+#firstProject {
+    grid-area: project1;
+}
+
+#secondProject {
+    grid-area: project2;
+}
+
+#thirdProject {
+    grid-area: project3;
+}
+
+.image {
+    
+    grid-area: image;
+    padding: 50px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+.text {
+    grid-area: text;
+}
+.myPicture {
+    width:100%;
+}
