@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>About Me</title>
     <script src="https://kit.fontawesome.com/c3658f5bb9.js" crossorigin="anonymous"></script>
     <link href="css/style.css" type="text/css" rel="stylesheet">
+<style>
+    html {
+  scroll-behavior: smooth;
+}
+</style>
 
 </head>
 <body>
@@ -14,28 +22,32 @@
         
         <nav class="inline-block">
             <ul class="nav-names">
-              <li id="home">Home</li>
-              <li id="skills">Skills</li>
-              <li id="about">About</li>
-              <li id="contact">Contact</li>
+              <li class="home"><a href="#">Home</li></a>
+              <li class="skills"><button>Skills</button></li>
+              <li class="about"><a href="#">About</li></a>
+              <li class="contact"><a href="#">Contact</li></a>
             </ul>
-        </nav>    
+        </nav>  
     </header>
-    <section class="heroImg">
-        <div class="content">
+    <!-- Hero Image/header-->
+    <section id="heroImgGrid">
+        <div class="content heroImgArea" id="profileImg">
             <img src="images/20181124_190711_ccexpress.jpeg" class="myPicture">
-                <p>My name is Jennifer, I'm a UX Designer who strives to bring content that is user-centred.</p>
-                <button>Download Resume</button>        
         </div>
+        <div id="aboutMe" class="intro">
+            <p>My name is Jennifer, I'm a UX Designer who strives to bring content that is user-centred.</p>
+            <button class="resume">Download Resume</button> 
+        </div>                          
     </section>
 <!--  My UX Skills section coded using CSS flex -->
 <section class="mySkills">
+    <div class="scallop-up"></div>
     <h1 class="skillsHead">My Skills</h1>
     <div class = "flexContainer">
         <div class="skill1">
            <div class="icon"><i class="fa-regular fa-lightbulb" style="font-size: 80px;"></i></div>
             <h3>User Research</h3>
-            <p>User Interviews &#9679; User Insights  </p>
+            <p>User Interviews &#9679; User Insights &#9679; Stakeholder Interviews </p>
         </div>
         <div class ="skill2">
             <div class="icon"><i class="fa-solid fa-chalkboard-user" style="font-size: 80px;"></i></div>
@@ -48,7 +60,10 @@
             <p>HTML &#9679;	CSS &#9679;	JavaScript &#9679; jQuery &#9679; Bootstrap</p>
         </div>
     </div>
+    <div class="scallop-down"></div>
 </section>
+
+
 <section id="myWorkGrid">
     <h1 id="header">My Work</h1>
     <div id="firstProject" class="myWorkGridArea projectGrid">
@@ -56,8 +71,9 @@
             <img src="images/placeholdermockup.jpg">
         </div>
         <div class="text">
-            <h4>Title1</h4><span>DESCRIPTION</span> 
-            <!-- I want to turn the DESCRIPTION part of this into a paragraph that goes underneath the h4 title -->
+            <h4>Pet Lodge</h4>
+            <p>APP | Travel made simple for dog-owners with just a few taps! </p>
+            <button type="button" >View Project</button>
         </div>
     </div>
     <div id="secondProject" class="myWorkGridArea projectGrid">
@@ -65,8 +81,9 @@
             <img src="images/placeholdermockup.jpg">
         </div>
         <div  class="text">
-            <h4>Title2</h4>
-            <p>Short description 2</p>
+            <h4>Find & Seek</h4>
+            <p>APP | An efficient tool for students to locate any lost items on their college campus.</p>
+            <button type="button" >View Project</button>
         </div>
     </div>
     <div id="thirdProject" class="myWorkGridArea projectGrid">
@@ -74,36 +91,22 @@
             <img src="images/placeholdermockup.jpg">
         </div>
         <div class="text">
-            <h4>Title1</h4>
-            <p>Short description</p>
-            <button type="button" >Click me</button>
+            <h4>Anti-Cruelty Society Website Redesign</h4>
+            <p>A UI Analysis of this page led my team to find ways to get better traffic to the ACS website.</p>
+            <button type="button" >View Project</button>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </section>
     <footer>
         <ul class ="footer-names">
-            <li id="home">Home</li>
-            <li id="skills">Skills</li>
-            <li id="about">About</li>
-            <li id="contact">Contact</li>
+            <li class="home"><a href="#">Home</li></a>
+            <li class="skills"><a href="#">Skills</li></a>
+            <li class="about"><a href="#">About</li></a>
+            <li class="contact"><a href="#">Contact</a></li>
         </ul>
     </footer>
 
 </body>
-
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
 </html>

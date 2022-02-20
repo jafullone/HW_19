@@ -1,15 +1,20 @@
+html {
+    font-family: 'Nunito', sans-serif;
+    background-color: #012E40;
+    width:100% !important; 
+}
 .nav-names {
     list-style: none;
     margin-top: 20px;
     width: 50%;
     padding-left: 500px;
-    font-family: Tahoma, sans-serif;
+   
        
 }
 .nav-names li {
     display: inline-block;
     padding: 15px; 
-   
+  
 
 }
 .inline-block {
@@ -23,7 +28,7 @@
     float: left;
     vertical-align: center;
     width: 23%;
-    
+      
 }
 nav {
     width: 73%;
@@ -38,24 +43,17 @@ ul {
     list-style-type: none;
     
 }
-.heroImg {
-    height: 700px;
-    padding: 25px;
-    /* outline: 1px solid red; */
-}
+
 .content {
     width: 100%;
     margin: 0 auto;
-}
-footer {
-    background-color: #373738;
-    /* outline: 1px solid red; */
-  
+    position: relative;
+    text-align: center;
 }
 #navFooter {
     display: inline-block;
     vertical-align: bottom;
-    padding: auto 0;
+    
 }
 
 .navigation {
@@ -66,11 +64,12 @@ footer {
     list-style: none;
     margin-top: 20px;
 }
+    
 .footer-names li {
     display: inline-block;
     padding: 15px; 
-
-    color: white;
+    
+   
 }
 .flexContainer {
   display: flex;
@@ -81,23 +80,26 @@ footer {
  
  .skillsHead{
      text-align: center;
+     background: #3CA6A6;
  }
 .skill1 {
-     width: 33%;
+     width: 28%;
     
   }
 .skill2 {
-    width: 33%;
+    width: 28%;
 }
 .skill3 {
-    width: 33%;
+    width: 28%;
 }
 .mySkills {
     align-items: center;
+    background-color: #3CA6A6;
+    color: white; 
 }
 .icon {
     text-align: center;
-    color: #AC9FBB;
+    color: #012E40; 
 }
 .mySkills h3 {
     text-align: center;
@@ -107,7 +109,8 @@ footer {
     text-align: center;
 }
 body {
-    font-family: Tahoma, sans-serif;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
 }
 
 #myWorkGrid {
@@ -121,7 +124,6 @@ body {
     "project2"
     "project3";
 }
-
 .myWorkGridArea {
     align-items: center;
 }
@@ -169,4 +171,68 @@ body {
 }
 .myPicture {
     width:100%;
+}
+a:link {
+    text-decoration: none;
+      }
+
+html {
+    scroll-behavior: smooth;
+    color: white; 
+  }
+h1 {
+    color: white;
+}
+a:hover {
+color: #3CA6A6; 
+}
+a {
+    color: white;
+}
+button {
+    font-size: 100%;
+    font-family: inherit;
+    border: 0;
+    padding:0; 
+    background-color: transparent;
+    color: white;
+}
+button:hover {
+    color: #3CA6A6; 
+}
+.scallop-up{
+    height:100px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(#3CA6A6), color-stop(0.49, #3CA6A6), color-stop(0.51, #012E40), to(#012E40));
+  -webkit-background-size: 49px 100%;
+  }
+  .scallop-down{
+    height:100px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#3CA6A6), color-stop(0.49, #3CA6A6), color-stop(0.51, #012E40), to(#012E40));
+  -webkit-background-size: 49px 100%;
+  } 
+  footer {
+    text-align: center;
+  }
+  footer a {
+      color: white;
+  }
+
+  #heroImgGrid {
+    display: grid;
+    grid-template-columns: 1fr, 60px;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "profileImg intro";
+}
+.heroImgArea {
+    align-items: center;
+}
+#aboutMe {
+    grid-area: intro;
+}
+#profileImg {
+    grid-area: profileImg; 
 }
